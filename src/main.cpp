@@ -2,7 +2,11 @@
 #include "ofApp.h"
 
 int main( ){
-  ofSetCurrentRenderer(ofGLProgrammableRenderer::TYPE);
-  ofSetupOpenGL(1920,1200,OF_WINDOW);
-  ofRunApp(new ofApp());
+  
+	ofGLESWindowSettings settings;
+	settings.Width = 1920;
+	setting.Length = 1200;
+	settings.setGLESVerion(3);
+  ofCreateWindow(settings);
+	ofRunApp(new ofApp());
 }
